@@ -1,0 +1,185 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+#navbar{
+    border: 1px solid black;
+    padding: 1px 0 0 100px;
+    background-color: black;
+    position: sticky;
+}
+nav a{ 
+    color: #f2f2f2;
+}
+nav li {
+    display: inline;
+}
+.item{
+    margin-right: 1em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.logo_note{
+    font-family: 'Tangerine', serif;
+    font-size: 4em;
+    text-shadow: 4px 4px 4px white;
+    color: rgb(197, 60, 83);
+}
+header{
+    background-image: url(../image/mlm-exhibiton.jpg);
+    background-size: cover;
+    position: top;
+    width: 100%;
+}
+nav,li, a:hover{
+    color: rgb(175, 40, 67);
+}
+.intro {
+    color: white;
+    text-shadow: 2px 1px black;
+    padding: 100px;
+    font-family: 'Lato', sans-serif;
+}
+content {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.about > div {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    padding: 1em 0;    
+}
+
+article h4, h5, h6{
+    margin: 1em;
+    color: rgba(231, 0, 0);
+}
+
+.org-logo {
+    height: 5%;
+    width: 5%;
+    margin: 1em;
+}
+
+.organisers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+
+}
+
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: #D50000;
+}
+
+
+.about-2 {
+    margin-top: 4em;
+}
+
+.organisers-detail {
+    overflow: auto;
+}
+
+.organisers-detail img {
+    float: right;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products > .card {
+    margin: 10px 0;
+}
+
+.card-body > button {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+    margin-top: 2em;
+    align-self: center;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#navbar-example2 {
+    position: fixed;
+}
+
+.card > img {
+    height: 200px;
+}
+
+.contact-section {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    box-shadow: 0px 0px 5px 0px rgba(199,179,199,1);
+    margin: 1em 0;
+    padding: 1em 0;  
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    color: #D50000;
+}
+
+button {
+    padding: 10px 12px;
+    border: 2px solid #D50000;
+    border-radius: 50px;
+    background: transparent;
+
+}
+
+button a {
+    color: #D50000;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #D50000;
+}
+
+button:hover a {
+    color: white;
+}
+
+.card button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 550px) {
+    header .intro {
+        padding-top: 150px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products .card {
+       width:100%;
+    }
+
+    .products {
+        transition: display 1s ease;
+    }
+}
